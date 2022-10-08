@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main HTML</title>
+
+</head>
+
+<body>
+
+
+    <h1>Случайное число</h1>
+
+    <form name="form">
+        <input type="text" name="from" id="from" value="0">
+        <input type="text" name="to" id="to" value="100">
+        <input type="button" value="Проверить" onClick="buttonPress(form.from.value, form.to.value)">
+    </form>
+    <h2>Случайное число = <span id="result"></span></h2>
+
+    <script src="js/script.js">
+
+        function buttonPress(from, to) {
+            x = myRandom(from, to);
+
+            document.getElementById("result").innerHTML = x;
+        }
+    </script>
+</body>
+
+</html>
